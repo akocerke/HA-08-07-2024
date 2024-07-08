@@ -1,2 +1,2 @@
 FROM alpine:latest
-CMD ["echo", "Ich teste noch :)"]
+CMD ["echo", "Ich teste noch"]
