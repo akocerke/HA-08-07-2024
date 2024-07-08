@@ -19,7 +19,7 @@ jobs:
           aws-region: eu-central-1
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          # aws-session-token: ${{ secrets.AWS_SESSION_TOKEN }} # Kommentiere diese Zeile aus, wenn kein aws-session-token benötigt wird
+          aws-session-token: ${{ secrets.AWS_SESSION_TOKEN }} 
 
       - name: Login to Amazon ECR
         id: login-ecr
