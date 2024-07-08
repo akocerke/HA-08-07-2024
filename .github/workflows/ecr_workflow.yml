@@ -28,7 +28,7 @@ jobs:
       - name: Build and Push Docker Image
         env:
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-          ECR_REPOSITORY: akocerke/HA-08-07-2024  # Hier ollte der Name deines ECR-Repositories stehen
+          ECR_REPOSITORY: 113949335214.dkr.ecr.eu-central-1.amazonaws.com/my-docker-repo2:latest  # Hier ollte der Name deines ECR-Repositories stehen
           IMAGE_TAG: ${{ github.sha }}
         run: |
           docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
