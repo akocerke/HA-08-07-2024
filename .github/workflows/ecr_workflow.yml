@@ -1,0 +1,16 @@
+name: Test AWS Secret Access Key
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test-secret:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Zeige den AWS Secret Access Key an
+        run: echo ${{ secrets.AWS_SECRET_ACCESS_KEY }}
